@@ -34,7 +34,7 @@ db.once('open', function(){
 
 //Routes
 app.get('/', function(req, res){
-	res.sendFile('./public/index.html');
+	res.sendFile(__dirname + '/public/nyt.html');
 });
 
 //Get route to show the users save articles. 

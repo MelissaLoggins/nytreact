@@ -2,7 +2,7 @@
 var axios = require('axios');
 
 //NYT API Key 
-var NYT = "&api-key=0a156cdac7664279a87c57512ec0bbe7"
+var NYT = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
 
 var helpers = {
 	//This function runs the query on NYT
