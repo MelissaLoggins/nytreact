@@ -56,8 +56,12 @@ app.post('/api/', function(req, res){
 	var newSearch = new Article(req.body);
 	console.log("BODY: "+req.body);
 
-	Article.create({"title": req.body.title, "date": Date.now(), "url":req.body.url}, function(err){
-		if(err){
+	Article.create({
+		"title": req.body.title, 
+		"date": Date.now(), 
+		"url":req.body.url}, 
+		function(err){
+		  if(err){
 			console.log(err);
 		}
 		else{

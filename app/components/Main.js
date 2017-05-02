@@ -64,6 +64,8 @@ var Main = React.createClass({
 	render: function(){
 		return(
 			<div className="container">
+
+			 
 				<div className="row">
 					<Search setTerm={this.setTerm}/>
 				</div>
